@@ -1,0 +1,19 @@
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  &__link {
+    color: var(--color-black-light);
+    outline: none;
+    transition: var(--transition-200);
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-yellow-orange);
+    }
+  }
+}
