@@ -8,6 +8,7 @@ export const HeadphonesSchema = z.object({
   price: z.number(),
   rate: z.number(),
   wireless: z.boolean(),
+  discount: z.number().optional(),
 });
 
 export const HeadphonesArraySchema = z.array(HeadphonesSchema);

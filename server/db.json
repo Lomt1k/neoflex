@@ -6,7 +6,8 @@
       "img": "http://localhost:3000/images/apple-byz-s852.webp",
       "price": 690,
       "rate": 4.7,
-      "wireless": false
+      "wireless": false,
+      "discount": 0.2
     },
     {
       "id": 2,

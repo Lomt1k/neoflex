@@ -1,0 +1,16 @@
+.text-button {
+  padding: 0;
+  background-color: unset;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: var(--ff-main);
+  font-weight: 600;
+  color: var(--color-black);
+  transition: color var(--transition-200);
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-yellow-orange);
+  }
+}

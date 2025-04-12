@@ -1,0 +1,19 @@
+.wired-section {
+  padding: 28px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__heading {
+    color: var(--color-grey);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__error {
+    color: var(--color-red);
+  }
+}
