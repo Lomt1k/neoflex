@@ -1,0 +1,15 @@
+{
+  "name": "neoflex-server",
+  "version": "1.0.0",
+  "description": "Сервер для тестового задания (чтобы по красоте было)",
+  "license": "ISC",
+  "author": "Vladimir Yashin",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server -w db.json"
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

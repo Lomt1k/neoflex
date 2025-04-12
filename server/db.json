@@ -1,0 +1,67 @@
+{
+  "headphones": [
+    {
+      "id": 1,
+      "title": "Apple BYZ S852I",
+      "img": "http://localhost:3000/images/apple-byz-s852.webp",
+      "price": 690,
+      "rate": 4.7
+    },
+    {
+      "id": 2,
+      "title": "Apple EarPods",
+      "img": "http://localhost:3000/images/apple-earpods.webp",
+      "price": 2390,
+      "rate": 4.5
+    },
+    {
+      "id": 3,
+      "title": "Samsung Galaxy Buds 3",
+      "img": "http://localhost:3000/images/samsung-galaxy-buds-3-pro.webp",
+      "price": 17990,
+      "rate": 4.7
+    },
+    {
+      "id": 4,
+      "title": "Sony WH-1000XM4",
+      "img": "http://localhost:3000/images/sony-wh-1000xm4.webp",
+      "price": 27990,
+      "rate": 4.7
+    },
+    {
+      "id": 5,
+      "title": "Xiaomi Redmi Buds 5",
+      "img": "http://localhost:3000/images/xiaomi-redmi-buds-5.webp",
+      "price": 3290,
+      "rate": 4.7
+    },
+    {
+      "id": 6,
+      "title": "JBL JR310BT",
+      "img": "http://localhost:3000/images/jbl-jr310bt.webp",
+      "price": 4990,
+      "rate": 4.8
+    },
+    {
+      "id": 7,
+      "title": "Panasonic RP HJE12E",
+      "img": "http://localhost:3000/images/panasonic-rp-hje12e.webp",
+      "price": 690,
+      "rate": 4.6
+    },
+    {
+      "id": 8,
+      "title": "Xbox Wireless Headset",
+      "img": "http://localhost:3000/images/xbox-wireless-headset.webp",
+      "price": 13590,
+      "rate": 4.8
+    },
+    {
+      "id": 9,
+      "title": "Qumo Party Cat",
+      "img": "http://localhost:3000/images/qumo-party-cat.webp",
+      "price": 1350,
+      "rate": 4.5
+    }
+  ]
+}
