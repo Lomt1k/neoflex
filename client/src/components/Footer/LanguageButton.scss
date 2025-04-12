@@ -1,0 +1,21 @@
+.language-button {
+  padding: 0;
+  background-color: unset;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: var(--ff-main);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-black-light);
+  transition: color var(--transition-200);
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-yellow-orange);
+  }
+
+  &--active {
+    color: var(--color-yellow-orange)
+  }
+}

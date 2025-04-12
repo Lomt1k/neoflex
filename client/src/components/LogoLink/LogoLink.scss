@@ -3,5 +3,6 @@
   font-weight: 700;
   color: var(--color-black-light);
   user-select: none;
-  outline: none;
+  outline-offset: 8px;
+  outline-color: var(--color-yellow-orange);
 }
