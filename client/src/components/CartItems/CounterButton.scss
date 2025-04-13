@@ -1,0 +1,23 @@
+.counter-button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-chardonnay);
+  outline: none;
+  cursor: pointer;
+  transition: background-color var(--transition-200);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color-yellow-orange);
+  }
+
+  svg {
+    color: var(--color-white);
+  }
+}

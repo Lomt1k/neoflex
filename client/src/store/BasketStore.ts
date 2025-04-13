@@ -10,6 +10,10 @@ export interface BasketProductInfo {
 export class BasketStore {
   productsById: Map<string, BasketProductInfo> = new Map();
 
+  get products(): BasketProductInfo[] {
+    return [...this.productsById.values()];
+  }
+
   get productsCount(): number {
     let count = 0;
     for (let productInfo of this.productsById.values()) {
