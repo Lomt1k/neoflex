@@ -1,5 +1,6 @@
 import { useWiredHeadphones } from '../../hooks/useWiredHeadphones';
 import Container from '../Container/Container';
+import LoadingProductCardList from '../ProductCardList/LoadingProductCardList';
 import ProductCardList from '../ProductCardList/ProductCardList';
 import './WiredSection.scss';
 
@@ -17,9 +18,7 @@ const WiredSection = () => {
             </span>
           }
           {isFetching &&
-            <span className='wired-section__loading'>
-              Данные загружаются...
-            </span>
+            <LoadingProductCardList count={3} />
           }
           {headphones &&
             <ProductCardList products={headphones} />
