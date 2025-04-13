@@ -2,6 +2,7 @@ import { FC, useCallback } from 'react';
 import { Headphones } from '../../api/Headphones';
 import IconRating from '../../assets/icons/Rating.svg?react';
 import TextButton from '../TextButton/TextButton';
+import RootStore from '../../store/RootStore';
 import './ProductCard.scss';
 
 type ProductCardProps = {
@@ -10,7 +11,7 @@ type ProductCardProps = {
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
   const handleClick = useCallback(() => {
-    // TODO: Add to basket
+    RootStore.basketStore.add(product);
   }, [product]);
 
   const currentPrice = product.discount
@@ -23,6 +24,7 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
         height={237}
         src={product.img}
         alt={product.title}
+        draggable={false}
       />
       <div className="product-card__info">
         <span className="product-card__title">{product.title}</span>

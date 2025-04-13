@@ -1,15 +1,16 @@
 import HeaderLink from "./HeaderLink";
 import IconBasket from "../../assets/icons/Basket.svg?react";
+import { observer } from "mobx-react-lite";
+import RootStore from "../../store/RootStore";
 
-const HeaderLinkBasket = () => {
-  // TODO: Реализовать логику каунтера
+const HeaderLinkBasket = observer(() => {
   return (
     <HeaderLink
       to="/basket"
       ariaLabel="Корзина"
-      counter={1}
+      counter={RootStore.basketStore.productsCount}
       icon={<IconBasket aria-hidden={true}/>} />
   )
-}
+})
 
 export default HeaderLinkBasket;
