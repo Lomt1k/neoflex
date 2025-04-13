@@ -3,6 +3,7 @@ import { Headphones } from '../../api/Headphones';
 import IconRating from '../../assets/icons/Rating.svg?react';
 import TextButton from '../TextButton/TextButton';
 import RootStore from '../../store/RootStore';
+import { getActualPrice } from '../../utils/ProductHelper';
 import './ProductCard.scss';
 
 type ProductCardProps = {
@@ -13,10 +14,6 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
   const handleClick = useCallback(() => {
     RootStore.basketStore.add(product);
   }, [product]);
-
-  const currentPrice = product.discount
-    ? product.price * (1 - product.discount)
-    : product.price;
 
   return (
     <div className="product-card">
@@ -29,7 +26,9 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
       <div className="product-card__info">
         <span className="product-card__title">{product.title}</span>
         <div className="product-card__price">
-          <span className="product-card__price-new">{currentPrice}&nbsp;₽</span>
+          <span className="product-card__price-new">
+            {getActualPrice(product)}&nbsp;₽
+          </span>
           {product.discount &&
             <span className="product-card__price-old">
               {product.price}&nbsp;₽
