@@ -1,11 +1,11 @@
 import { useQuery } from "@tanstack/react-query"
-import { fetchWiredHeadphones } from "../api/Headphones";
+import { fetchWirelessHeadphones } from "../api/Headphones";
 import { UseHeadphonesResult } from "./UseHeadphonesResult";
 
-export const useWiredHeadphones = () => {
+export const useWirelessHeadphones = () => {
   const query = useQuery({
-    queryKey: ['headphones', 'wired'],
-    queryFn: fetchWiredHeadphones
+    queryKey: ['headphones', 'wireless'],
+    queryFn: fetchWirelessHeadphones
   });
 
   const result: UseHeadphonesResult = { ...query };
