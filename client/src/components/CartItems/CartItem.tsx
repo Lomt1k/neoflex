@@ -34,6 +34,7 @@ const CartItem: FC<CartItemProps> = ({ product, count }) => {
     <div className="cart-item">
       <div className="cart-item__top">
         <img
+          className="cart-item__img"
           src={product.img}
           alt={product.title}
           draggable={false}

@@ -8,6 +8,14 @@
     flex-wrap: wrap;
     gap: 11px 174px;
     max-height: 73px;
+
+    @media (max-width: 900px) {
+      gap: 11px 60px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
   }
 
   &__link {

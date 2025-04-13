@@ -6,6 +6,10 @@
   align-items: center;
   gap: 18px;
 
+  @media (max-width: 400px) {
+    gap: 10px;
+  }
+
   &__link {
     color: var(--color-black-light);
     outline: none;
@@ -14,6 +18,13 @@
     &:hover,
     &:focus-visible {
       color: var(--color-yellow-orange);
+    }
+
+    @media (max-width: 400px) {
+      svg {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }

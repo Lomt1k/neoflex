@@ -1,4 +1,4 @@
-import { FC, useCallback } from 'react';
+import { FC, memo, useCallback } from 'react';
 import { Headphones } from '../../api/Headphones';
 import IconRating from '../../assets/icons/Rating.svg?react';
 import TextButton from '../TextButton/TextButton';
@@ -47,4 +47,4 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
   )
 }
 
-export default ProductCard;
+export default memo(ProductCard);
